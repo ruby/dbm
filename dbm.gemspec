@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.require_path = %w{lib}
   s.files = %w{ext/dbm/extconf.rb ext/dbm/dbm.c}
   s.extensions = %w{ext/dbm/extconf.rb}
-  s.required_ruby_version = ">= 2.2.2"
+  s.required_ruby_version = ">= 2.3.0"
 
   s.authors = ["Yukihiro Matsumoto"]
   s.email = ["matz@ruby-lang.org"]
