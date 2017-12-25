@@ -34,7 +34,7 @@ Or install it yourself as:
 
 ## Usage
 
-```
+```ruby
 require 'dbm'
 db = DBM.open('rfcs', 0666, DBM::WRCREAT)
 db['822'] = 'Standard for the Format of ARPA Internet Text Messages'
