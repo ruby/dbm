@@ -13,7 +13,7 @@ jobs:
     - name: Install packages
       run: |
         sudo apt update -qy
-        sudo apt install libgdbm5 libgdbm-dev
+        sudo apt install libdb-dev
     - name: Set up Ruby
       uses: actions/setup-ruby@v1
       with:
