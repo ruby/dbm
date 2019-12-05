@@ -1,7 +1,5 @@
 # DBM
 
-[![Build Status](https://travis-ci.org/ruby/dbm.svg?branch=master)](https://travis-ci.org/ruby/dbm)
-
 The DBM class provides a wrapper to a Unix-style [dbm](http://en.wikipedia.org/wiki/Dbm) or Database Manager library.
 
 Dbm databases do not have tables or columns; they are simple key-value data stores, like a Ruby Hash except not resident in RAM. Keys and values must be strings.
