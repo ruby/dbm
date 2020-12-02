@@ -349,14 +349,6 @@ fdbm_key(VALUE obj, VALUE valstr)
     return Qnil;
 }
 
-/* :nodoc: */
-static VALUE
-fdbm_index(VALUE hash, VALUE value)
-{
-    rb_warn("DBM#index is deprecated; use DBM#key");
-    return fdbm_key(hash, value);
-}
-
 /*
  * call-seq:
  *   dbm.select {|key, value| block} -> array
@@ -1057,7 +1049,6 @@ Init_dbm(void)
     rb_define_method(rb_cDBM, "fetch", fdbm_fetch_m, -1);
     rb_define_method(rb_cDBM, "[]=", fdbm_store, 2);
     rb_define_method(rb_cDBM, "store", fdbm_store, 2);
-    rb_define_method(rb_cDBM, "index",  fdbm_index, 1);
     rb_define_method(rb_cDBM, "key",  fdbm_key, 1);
     rb_define_method(rb_cDBM, "select",  fdbm_select, 0);
     rb_define_method(rb_cDBM, "values_at", fdbm_values_at, -1);
