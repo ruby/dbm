@@ -12,6 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install packages
+      if: ${{ matrix.os == 'ubuntu-latest' }}
       run: |
         sudo apt update -qy
         sudo apt install libdb-dev
